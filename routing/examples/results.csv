@@ -1,0 +1,5 @@
+scenario,method,last_s,mean_s,exit_w_people,exit_e_people
+A: all edges normal,dijkstra,104,72.4,32,143
+A: all edges normal,ccrp,89,68.4,68,107
+B: small stair blocked + c7-c8 uncertain,dijkstra,133,98.1,0,175
+B: small stair blocked + c7-c8 uncertain,ccrp,132,97.8,0,175

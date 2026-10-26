@@ -1,0 +1,28 @@
+{
+ "building": "M (örnek / illustrative)",
+ "timestamp": "2026-10-27T10:20:05",
+ "source": "fusion (ders programı prior + uygulama/tarayıcı)",
+ "note": "Canlı katman: statik grafikten ayrı tutulur; anahtarlar düğüm kimlikleridir.",
+ "occupancy": {
+  "M101": {
+   "count": 35,
+   "confidence": 0.8
+  },
+  "M102": {
+   "count": 58,
+   "confidence": 0.7
+  },
+  "M103": {
+   "count": 12,
+   "confidence": 0.6
+  },
+  "M104": {
+   "count": 20,
+   "confidence": 0.6
+  },
+  "M105": {
+   "count": 50,
+   "confidence": 0.7
+  }
+ }
+}

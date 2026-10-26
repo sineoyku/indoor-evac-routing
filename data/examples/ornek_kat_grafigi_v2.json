@@ -1,0 +1,860 @@
+{
+ "directed": true,
+ "multigraph": false,
+ "graph": {
+  "building": "M (örnek / illustrative)",
+  "version": 2,
+  "units": {
+   "length": "m",
+   "width": "m",
+   "flow_capacity": "persons/s",
+   "travel_time_s": "s"
+  },
+  "assumptions": "specific flow ~1.3 p/s/m corridor & door, ~1.1 stair (approximate SFPE-type values, verify); speeds 1.2 / 0.6 m/s"
+ },
+ "nodes": [
+  {
+   "x": 11,
+   "y": 15.5,
+   "type": "room",
+   "floor": 1,
+   "capacity": 60,
+   "id": "M103"
+  },
+  {
+   "x": 21.5,
+   "y": 15.5,
+   "type": "room",
+   "floor": 1,
+   "capacity": 60,
+   "id": "M102"
+  },
+  {
+   "x": 30,
+   "y": 15.5,
+   "type": "room",
+   "floor": 1,
+   "capacity": 35,
+   "id": "M101"
+  },
+  {
+   "x": 12,
+   "y": 4.5,
+   "type": "room",
+   "floor": 1,
+   "capacity": 50,
+   "id": "M104"
+  },
+  {
+   "x": 27.5,
+   "y": 4.5,
+   "type": "room",
+   "floor": 1,
+   "capacity": 50,
+   "id": "M105"
+  },
+  {
+   "x": 11,
+   "y": 11,
+   "type": "door",
+   "floor": 1,
+   "width": 0.9,
+   "id": "d_M103"
+  },
+  {
+   "x": 21.5,
+   "y": 11,
+   "type": "door",
+   "floor": 1,
+   "width": 0.9,
+   "id": "d_M102"
+  },
+  {
+   "x": 30,
+   "y": 11,
+   "type": "door",
+   "floor": 1,
+   "width": 0.9,
+   "id": "d_M101"
+  },
+  {
+   "x": 12,
+   "y": 9,
+   "type": "door",
+   "floor": 1,
+   "width": 0.9,
+   "id": "d_M104"
+  },
+  {
+   "x": 27.5,
+   "y": 9,
+   "type": "door",
+   "floor": 1,
+   "width": 0.9,
+   "id": "d_M105"
+  },
+  {
+   "x": 20,
+   "y": 0.6,
+   "type": "door",
+   "floor": 1,
+   "width": 1.2,
+   "access": "staff_only",
+   "lock": "card_reader",
+   "egress_free": false,
+   "id": "d_S"
+  },
+  {
+   "x": 5,
+   "y": 10,
+   "type": "corridor",
+   "floor": 1,
+   "id": "c1"
+  },
+  {
+   "x": 11,
+   "y": 10,
+   "type": "corridor",
+   "floor": 1,
+   "id": "c2"
+  },
+  {
+   "x": 12,
+   "y": 10,
+   "type": "corridor",
+   "floor": 1,
+   "id": "c3"
+  },
+  {
+   "x": 20,
+   "y": 10,
+   "type": "corridor",
+   "floor": 1,
+   "id": "c4"
+  },
+  {
+   "x": 21.5,
+   "y": 10,
+   "type": "corridor",
+   "floor": 1,
+   "id": "c5"
+  },
+  {
+   "x": 27.5,
+   "y": 10,
+   "type": "corridor",
+   "floor": 1,
+   "id": "c6"
+  },
+  {
+   "x": 30,
+   "y": 10,
+   "type": "corridor",
+   "floor": 1,
+   "id": "c7"
+  },
+  {
+   "x": 34.5,
+   "y": 10,
+   "type": "corridor",
+   "floor": 1,
+   "id": "c8"
+  },
+  {
+   "x": 20,
+   "y": 5,
+   "type": "corridor",
+   "floor": 1,
+   "id": "c_s"
+  },
+  {
+   "x": 2.5,
+   "y": 15,
+   "type": "stair",
+   "floor": 1,
+   "id": "S_small_F1"
+  },
+  {
+   "x": 37,
+   "y": 15,
+   "type": "stair",
+   "floor": 1,
+   "id": "S_big_F1"
+  },
+  {
+   "x": 37,
+   "y": 6.5,
+   "type": "elevator",
+   "floor": 1,
+   "id": "Elev_F1"
+  },
+  {
+   "x": -5,
+   "y": 15,
+   "type": "stair",
+   "floor": 0,
+   "id": "S_small_F0"
+  },
+  {
+   "x": 45,
+   "y": 15,
+   "type": "stair",
+   "floor": 0,
+   "id": "S_big_F0"
+  },
+  {
+   "x": -5,
+   "y": 5,
+   "type": "exit",
+   "floor": 0,
+   "id": "EXIT_W"
+  },
+  {
+   "x": 45,
+   "y": 5,
+   "type": "exit",
+   "floor": 0,
+   "id": "EXIT_E"
+  },
+  {
+   "x": 20,
+   "y": -3,
+   "type": "exit",
+   "floor": 0,
+   "id": "EXIT_S"
+  },
+  {
+   "x": 18,
+   "y": 11,
+   "type": "door",
+   "floor": 1,
+   "width": 0.9,
+   "id": "d_M102b"
+  },
+  {
+   "x": 31.5,
+   "y": 9,
+   "type": "door",
+   "floor": 1,
+   "width": 0.9,
+   "id": "d_M105b"
+  }
+ ],
+ "edges": [
+  {
+   "length": 4,
+   "type": "door",
+   "state": "normal",
+   "width": 3.0,
+   "flow_capacity": 3.9,
+   "travel_time_s": 4,
+   "source": "M103",
+   "target": "d_M103"
+  },
+  {
+   "length": 4,
+   "type": "door",
+   "state": "normal",
+   "width": 3.0,
+   "flow_capacity": 3.9,
+   "travel_time_s": 4,
+   "source": "M102",
+   "target": "d_M102"
+  },
+  {
+   "length": 4,
+   "type": "door",
+   "state": "normal",
+   "width": 3.0,
+   "flow_capacity": 3.9,
+   "travel_time_s": 4,
+   "source": "M102",
+   "target": "d_M102b"
+  },
+  {
+   "length": 4,
+   "type": "door",
+   "state": "normal",
+   "width": 3.0,
+   "flow_capacity": 3.9,
+   "travel_time_s": 4,
+   "source": "M101",
+   "target": "d_M101"
+  },
+  {
+   "length": 4,
+   "type": "door",
+   "state": "normal",
+   "width": 3.0,
+   "flow_capacity": 3.9,
+   "travel_time_s": 4,
+   "source": "M104",
+   "target": "d_M104"
+  },
+  {
+   "length": 4,
+   "type": "door",
+   "state": "normal",
+   "width": 3.0,
+   "flow_capacity": 3.9,
+   "travel_time_s": 4,
+   "source": "M105",
+   "target": "d_M105"
+  },
+  {
+   "length": 4,
+   "type": "door",
+   "state": "normal",
+   "width": 3.0,
+   "flow_capacity": 3.9,
+   "travel_time_s": 4,
+   "source": "M105",
+   "target": "d_M105b"
+  },
+  {
+   "length": 4,
+   "type": "door",
+   "state": "normal",
+   "width": 3.0,
+   "flow_capacity": 3.9,
+   "travel_time_s": 4,
+   "source": "d_M103",
+   "target": "M103"
+  },
+  {
+   "length": 1,
+   "type": "door",
+   "state": "normal",
+   "width": 0.9,
+   "flow_capacity": 1.17,
+   "travel_time_s": 1,
+   "source": "d_M103",
+   "target": "c2"
+  },
+  {
+   "length": 4,
+   "type": "door",
+   "state": "normal",
+   "width": 3.0,
+   "flow_capacity": 3.9,
+   "travel_time_s": 4,
+   "source": "d_M102",
+   "target": "M102"
+  },
+  {
+   "length": 1,
+   "type": "door",
+   "state": "normal",
+   "width": 0.9,
+   "flow_capacity": 1.17,
+   "travel_time_s": 1,
+   "source": "d_M102",
+   "target": "c5"
+  },
+  {
+   "length": 4,
+   "type": "door",
+   "state": "normal",
+   "width": 3.0,
+   "flow_capacity": 3.9,
+   "travel_time_s": 4,
+   "source": "d_M101",
+   "target": "M101"
+  },
+  {
+   "length": 1,
+   "type": "door",
+   "state": "normal",
+   "width": 0.9,
+   "flow_capacity": 1.17,
+   "travel_time_s": 1,
+   "source": "d_M101",
+   "target": "c7"
+  },
+  {
+   "length": 4,
+   "type": "door",
+   "state": "normal",
+   "width": 3.0,
+   "flow_capacity": 3.9,
+   "travel_time_s": 4,
+   "source": "d_M104",
+   "target": "M104"
+  },
+  {
+   "length": 1,
+   "type": "door",
+   "state": "normal",
+   "width": 0.9,
+   "flow_capacity": 1.17,
+   "travel_time_s": 1,
+   "source": "d_M104",
+   "target": "c3"
+  },
+  {
+   "length": 4,
+   "type": "door",
+   "state": "normal",
+   "width": 3.0,
+   "flow_capacity": 3.9,
+   "travel_time_s": 4,
+   "source": "d_M105",
+   "target": "M105"
+  },
+  {
+   "length": 1,
+   "type": "door",
+   "state": "normal",
+   "width": 0.9,
+   "flow_capacity": 1.17,
+   "travel_time_s": 1,
+   "source": "d_M105",
+   "target": "c6"
+  },
+  {
+   "length": 3,
+   "type": "door",
+   "access": "staff_only",
+   "state": "normal",
+   "width": 1.2,
+   "flow_capacity": 1.56,
+   "travel_time_s": 3,
+   "source": "d_S",
+   "target": "EXIT_S"
+  },
+  {
+   "length": 6,
+   "type": "corridor",
+   "state": "normal",
+   "width": 2.0,
+   "flow_capacity": 2.6,
+   "travel_time_s": 5,
+   "source": "c1",
+   "target": "c2"
+  },
+  {
+   "length": 5.6,
+   "type": "corridor",
+   "state": "normal",
+   "width": 2.0,
+   "flow_capacity": 2.6,
+   "travel_time_s": 5,
+   "source": "c1",
+   "target": "S_small_F1"
+  },
+  {
+   "length": 1,
+   "type": "door",
+   "state": "normal",
+   "width": 0.9,
+   "flow_capacity": 1.17,
+   "travel_time_s": 1,
+   "source": "c2",
+   "target": "d_M103"
+  },
+  {
+   "length": 6,
+   "type": "corridor",
+   "state": "normal",
+   "width": 2.0,
+   "flow_capacity": 2.6,
+   "travel_time_s": 5,
+   "source": "c2",
+   "target": "c1"
+  },
+  {
+   "length": 1,
+   "type": "corridor",
+   "state": "normal",
+   "width": 2.0,
+   "flow_capacity": 2.6,
+   "travel_time_s": 1,
+   "source": "c2",
+   "target": "c3"
+  },
+  {
+   "length": 1,
+   "type": "door",
+   "state": "normal",
+   "width": 0.9,
+   "flow_capacity": 1.17,
+   "travel_time_s": 1,
+   "source": "c3",
+   "target": "d_M104"
+  },
+  {
+   "length": 1,
+   "type": "corridor",
+   "state": "normal",
+   "width": 2.0,
+   "flow_capacity": 2.6,
+   "travel_time_s": 1,
+   "source": "c3",
+   "target": "c2"
+  },
+  {
+   "length": 8,
+   "type": "corridor",
+   "state": "normal",
+   "width": 2.0,
+   "flow_capacity": 2.6,
+   "travel_time_s": 7,
+   "source": "c3",
+   "target": "c4"
+  },
+  {
+   "length": 8,
+   "type": "corridor",
+   "state": "normal",
+   "width": 2.0,
+   "flow_capacity": 2.6,
+   "travel_time_s": 7,
+   "source": "c4",
+   "target": "c3"
+  },
+  {
+   "length": 1.5,
+   "type": "corridor",
+   "state": "normal",
+   "width": 2.0,
+   "flow_capacity": 2.6,
+   "travel_time_s": 2,
+   "source": "c4",
+   "target": "c5"
+  },
+  {
+   "length": 5,
+   "type": "corridor",
+   "state": "normal",
+   "width": 2.0,
+   "flow_capacity": 2.6,
+   "travel_time_s": 5,
+   "source": "c4",
+   "target": "c_s"
+  },
+  {
+   "length": 2.2,
+   "type": "door",
+   "state": "normal",
+   "width": 0.9,
+   "flow_capacity": 1.17,
+   "travel_time_s": 2,
+   "source": "c4",
+   "target": "d_M102b"
+  },
+  {
+   "length": 1,
+   "type": "door",
+   "state": "normal",
+   "width": 0.9,
+   "flow_capacity": 1.17,
+   "travel_time_s": 1,
+   "source": "c5",
+   "target": "d_M102"
+  },
+  {
+   "length": 1.5,
+   "type": "corridor",
+   "state": "normal",
+   "width": 2.0,
+   "flow_capacity": 2.6,
+   "travel_time_s": 2,
+   "source": "c5",
+   "target": "c4"
+  },
+  {
+   "length": 6.0,
+   "type": "corridor",
+   "state": "normal",
+   "width": 2.0,
+   "flow_capacity": 2.6,
+   "travel_time_s": 5,
+   "source": "c5",
+   "target": "c6"
+  },
+  {
+   "length": 1,
+   "type": "door",
+   "state": "normal",
+   "width": 0.9,
+   "flow_capacity": 1.17,
+   "travel_time_s": 1,
+   "source": "c6",
+   "target": "d_M105"
+  },
+  {
+   "length": 6.0,
+   "type": "corridor",
+   "state": "normal",
+   "width": 2.0,
+   "flow_capacity": 2.6,
+   "travel_time_s": 5,
+   "source": "c6",
+   "target": "c5"
+  },
+  {
+   "length": 2.5,
+   "type": "corridor",
+   "state": "normal",
+   "width": 2.0,
+   "flow_capacity": 2.6,
+   "travel_time_s": 3,
+   "source": "c6",
+   "target": "c7"
+  },
+  {
+   "length": 1,
+   "type": "door",
+   "state": "normal",
+   "width": 0.9,
+   "flow_capacity": 1.17,
+   "travel_time_s": 1,
+   "source": "c7",
+   "target": "d_M101"
+  },
+  {
+   "length": 2.5,
+   "type": "corridor",
+   "state": "normal",
+   "width": 2.0,
+   "flow_capacity": 2.6,
+   "travel_time_s": 3,
+   "source": "c7",
+   "target": "c6"
+  },
+  {
+   "length": 4.5,
+   "type": "corridor",
+   "state": "normal",
+   "beacon": "B3",
+   "width": 2.0,
+   "flow_capacity": 2.6,
+   "travel_time_s": 4,
+   "source": "c7",
+   "target": "c8"
+  },
+  {
+   "length": 1.8,
+   "type": "door",
+   "state": "normal",
+   "width": 0.9,
+   "flow_capacity": 1.17,
+   "travel_time_s": 2,
+   "source": "c7",
+   "target": "d_M105b"
+  },
+  {
+   "length": 4.5,
+   "type": "corridor",
+   "state": "normal",
+   "beacon": "B3",
+   "width": 2.0,
+   "flow_capacity": 2.6,
+   "travel_time_s": 4,
+   "source": "c8",
+   "target": "c7"
+  },
+  {
+   "length": 5.5,
+   "type": "corridor",
+   "state": "normal",
+   "width": 2.0,
+   "flow_capacity": 2.6,
+   "travel_time_s": 5,
+   "source": "c8",
+   "target": "S_big_F1"
+  },
+  {
+   "length": 4,
+   "type": "elevator",
+   "emergency_use": false,
+   "state": "normal",
+   "width": 1.0,
+   "flow_capacity": 1.3,
+   "travel_time_s": 4,
+   "source": "c8",
+   "target": "Elev_F1"
+  },
+  {
+   "length": 5,
+   "type": "corridor",
+   "state": "normal",
+   "width": 2.0,
+   "flow_capacity": 2.6,
+   "travel_time_s": 5,
+   "source": "c_s",
+   "target": "c4"
+  },
+  {
+   "length": 4.4,
+   "type": "door",
+   "access": "staff_only",
+   "lock": "card_reader",
+   "state": "normal",
+   "width": 1.2,
+   "flow_capacity": 1.56,
+   "travel_time_s": 4,
+   "source": "c_s",
+   "target": "d_S"
+  },
+  {
+   "length": 5.6,
+   "type": "corridor",
+   "state": "normal",
+   "width": 2.0,
+   "flow_capacity": 2.6,
+   "travel_time_s": 5,
+   "source": "S_small_F1",
+   "target": "c1"
+  },
+  {
+   "length": 14,
+   "type": "stair",
+   "state": "normal",
+   "beacon": "B1",
+   "slope_deg": 33,
+   "width": 1.5,
+   "flow_capacity": 1.65,
+   "travel_time_s": 24,
+   "source": "S_small_F1",
+   "target": "S_small_F0"
+  },
+  {
+   "length": 5.5,
+   "type": "corridor",
+   "state": "normal",
+   "width": 2.0,
+   "flow_capacity": 2.6,
+   "travel_time_s": 5,
+   "source": "S_big_F1",
+   "target": "c8"
+  },
+  {
+   "length": 14,
+   "type": "stair",
+   "beacon": "B4",
+   "state": "normal",
+   "slope_deg": 33,
+   "width": 2.3,
+   "flow_capacity": 2.53,
+   "travel_time_s": 24,
+   "source": "S_big_F1",
+   "target": "S_big_F0"
+  },
+  {
+   "length": 4,
+   "type": "elevator",
+   "emergency_use": false,
+   "state": "normal",
+   "width": 1.0,
+   "flow_capacity": 1.3,
+   "travel_time_s": 4,
+   "source": "Elev_F1",
+   "target": "c8"
+  },
+  {
+   "length": 14,
+   "type": "stair",
+   "state": "normal",
+   "beacon": "B1",
+   "slope_deg": 33,
+   "width": 1.5,
+   "flow_capacity": 1.65,
+   "travel_time_s": 24,
+   "source": "S_small_F0",
+   "target": "S_small_F1"
+  },
+  {
+   "length": 10,
+   "type": "corridor",
+   "state": "normal",
+   "width": 2.0,
+   "flow_capacity": 2.6,
+   "travel_time_s": 9,
+   "source": "S_small_F0",
+   "target": "EXIT_W"
+  },
+  {
+   "length": 14,
+   "type": "stair",
+   "beacon": "B4",
+   "state": "normal",
+   "slope_deg": 33,
+   "width": 2.3,
+   "flow_capacity": 2.53,
+   "travel_time_s": 24,
+   "source": "S_big_F0",
+   "target": "S_big_F1"
+  },
+  {
+   "length": 10,
+   "type": "corridor",
+   "state": "normal",
+   "width": 2.0,
+   "flow_capacity": 2.6,
+   "travel_time_s": 9,
+   "source": "S_big_F0",
+   "target": "EXIT_E"
+  },
+  {
+   "length": 10,
+   "type": "corridor",
+   "state": "normal",
+   "width": 2.0,
+   "flow_capacity": 2.6,
+   "travel_time_s": 9,
+   "source": "EXIT_W",
+   "target": "S_small_F0"
+  },
+  {
+   "length": 10,
+   "type": "corridor",
+   "state": "normal",
+   "width": 2.0,
+   "flow_capacity": 2.6,
+   "travel_time_s": 9,
+   "source": "EXIT_E",
+   "target": "S_big_F0"
+  },
+  {
+   "length": 4,
+   "type": "door",
+   "state": "normal",
+   "width": 3.0,
+   "flow_capacity": 3.9,
+   "travel_time_s": 4,
+   "source": "d_M102b",
+   "target": "M102"
+  },
+  {
+   "length": 2.2,
+   "type": "door",
+   "state": "normal",
+   "width": 0.9,
+   "flow_capacity": 1.17,
+   "travel_time_s": 2,
+   "source": "d_M102b",
+   "target": "c4"
+  },
+  {
+   "length": 4,
+   "type": "door",
+   "state": "normal",
+   "width": 3.0,
+   "flow_capacity": 3.9,
+   "travel_time_s": 4,
+   "source": "d_M105b",
+   "target": "M105"
+  },
+  {
+   "length": 1.8,
+   "type": "door",
+   "state": "normal",
+   "width": 0.9,
+   "flow_capacity": 1.17,
+   "travel_time_s": 2,
+   "source": "d_M105b",
+   "target": "c7"
+  }
+ ]
+}
